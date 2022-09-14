@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>목록 들여쓰기</title>
+    <style>
+        .inside {list-style-position: inside;} /* 불릿 안으로 들여쓰기 */
+        .style {
+            list-style: url('images/dot.png') inside; /* list-style 중복으로 입력 */
+        }
+    </style>
+</head>
+<body>
+    <h1>list-style-position을 지정하지 않음</h1>
+    <ul>
+        <li>회사소개</li>
+        <li>도서</li>
+        <li>자료실</li>
+        <li>질문답변</li>
+        <li>동영상강의</li>
+    </ul>
+
+    <h1>list-style-position : inside</h1>
+    <ul class="inside">
+        <li>회사소개</li>
+        <li>도서</li>
+        <li>자료실</li>
+        <li>질문답변</li>
+        <li>동영상강의</li>
+    </ul>
+    <ul class="style">
+        <li>apple</li>
+        <li>banana</li>
+        <li>chery</li>
+        <li>grape</li>
+    </ul>
+    
+</body>
+</html>

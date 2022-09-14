@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>원형 그러데이션의 모양 살펴보기</title>
+    <style>
+        div {
+            width: 700px;
+            height: 400px;
+        }
+        .grad1 {
+            background: red; /* css3 미지원 브라우저 */
+            background: -webkit-radial-gradient(white, yellow, red); /* 초기 모던 브라우저 */
+            background: -moz-radial-gradient(white, yellow, red); /* 초기 모던 브라우저 */
+            background: -o-radial-gradient(white, yellow, red); /* 초기 모던 브라우저 */
+            background: radial-gradient(white, yellow, red); /* 최신 모던 브라우저 */
+        }
+        .grad2 {
+            background: red; /* css3 미지원 브라우저 */
+            background: -webkit-radial-gradient(circle, white, yellow, red); /* 초기 모던 브라우저 */
+            background: -moz-radial-gradient(circle, white, yellow, red); /* 초기 모던 브라우저 */
+            background: -o-radial-gradient(circle, white, yellow, red); /* 초기 모던 브라우저 */
+            background: radial-gradient(circle, white, yellow, red); /* 최신 모던 브라우저 */
+        }
+    </style>
+</head>
+<body>
+    <h1>모양을 지정하지 않은 경우</h1>
+    <div class="grad1"></div>
+    <h1>모양을 원으로 지정함</h1>
+    <div class="grad2"></div>
+</body>
+</html>
