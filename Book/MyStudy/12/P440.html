@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>라디오 버튼을 클릭했을 때 스타일 적용하기</title>
+    <style>
+        input:disabled {
+            background: #ddd;
+            border: 1px #ccc solid;
+        }
+
+        input:checked + span {
+            color: blue;
+        }
+
+        fieldset {
+            width: 250px;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>사용자 정보</legend>
+            <label>이름<input type="text" disabled></label>
+        </fieldset>
+        <fieldset>
+            <legend>신청과목</legend>
+            <p>이 달에 신청할 과목을 선택하세요.</p>
+            <label><input type="radio" name="subject" value="speaking"><span>회화</span></label>
+            <label><input type="radio" name="grammar" value="speaking"><span>문법</span></label>
+            <label><input type="radio" name="writing" value="speaking"><span>작문</span></label>
+        </fieldset>
+        <input type="reset" style="margin: 5px 0px 0px 5px;">
+    </form>
+    
+</body>
+</html>
