@@ -1,4 +1,4 @@
-﻿# HTML
+# HTML 수업예제
 
 ## Ch01.HTML 개발환경 구축 실습
     - Hello : Hello World 출력 및 환경설정
@@ -18,5 +18,6 @@
     - 3_CSS 구조선택자 : 구조선택자 실습
     - 4_CSS 속성선택자 : 속성선택자 실습
     - 5_CSS 반응선택자 : 반응선택자 실습
-    
+
+# [Book 실습예제](https://github.com/ooo3345sjh/HTML/tree/main/Book/MyStudy)
     
