@@ -19,5 +19,10 @@
     - 4_CSS 속성선택자 : 속성선택자 실습
     - 5_CSS 반응선택자 : 반응선택자 실습
 
+## Ch04.CSS 속성
+    - 1_가시속성 : 가시속성 실습
+    - 2_박스속성 : 박스속성 실습
+    - 3_배경속성 : 배경속성 실습
+
 # [Book 실습예제](https://github.com/ooo3345sjh/HTML/tree/main/Book/MyStudy)
     
