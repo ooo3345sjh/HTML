@@ -23,6 +23,9 @@
     - 1_가시속성 : 가시속성 실습
     - 2_박스속성 : 박스속성 실습
     - 3_배경속성 : 배경속성 실습
+    - 3_글자속성 : 글자속성 실습
+    - 3_위치속성 : 위치속성 실습
+    - 3_float속성 : float속성 실습
 
 # [Book 실습예제](https://github.com/ooo3345sjh/HTML/tree/main/Book/MyStudy)
     
