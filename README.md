@@ -37,5 +37,9 @@
     - 7_Layout #7 : Layout #7
     - 8_Layout #8 : Layout #8
 
+## Ch06. 웹 디자인 실습
+    - 1_Web1 : 기업 사이트 메인
+    - 2_Web2 : 상품목록
+
 # [Book 실습예제](https://github.com/ooo3345sjh/HTML/tree/main/Book/MyStudy)
     
