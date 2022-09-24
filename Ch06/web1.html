@@ -33,26 +33,25 @@
         }
 
         header > p {
-            position: absolute;
-            right: 0px;
-            display: inline-block;
+            float: right;
             margin: 10px;
         }
-        header p > a {
+        header a {
             color: white;
+        }
+        header a:hover {
+            color: #777;
         }
         header > ul {
             position: absolute;
             top: 48px;
             right: 56px;
-            display: inline-block;
         }
         header ul > li {
             float: left;
             margin-right: 26px;
         }
         header ul li > a {
-            color: white;
             font-size: 16px;
         }
         main {
@@ -60,21 +59,13 @@
             height: 403px;
         }
 
-        main article {
+        main > .banner > article {
             box-sizing: border-box;
             padding-top: 10px;
             width: 50%;
             height: 100px;
             text-align: center;
-
-        }
-
-        main article:nth-child(1) {
             float: left;
-            width: 50%;
-        }
-        main article:nth-child(2) {
-            float: right;
             width: 50%;
         }
 
@@ -89,6 +80,14 @@
             float: right;
             margin: 10px 120px 0px 0px;
             line-height: 1.7em;
+        }
+
+        footer > img {
+            margin: 24px 0px 0px 10px;
+        }
+
+        footer > p > span {
+            font-weight: bold;
         }
 
 
