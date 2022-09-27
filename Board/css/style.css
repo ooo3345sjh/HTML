@@ -164,9 +164,14 @@
      box-sizing: border-box;
  }
 
- #user>.terms>table tr>td>label {float: right;}
+ #user>.terms>table tr>td>label {
+    float: right;
+    margin-top: 3px;
+}
 
- #user>.terms>table tr>td>label>input[type=checkbox] {}
+ #user>.terms>table tr>td>label>input[type=checkbox] {
+    vertical-align: text-bottom;
+ }
 
 
  #user>.terms>p {
