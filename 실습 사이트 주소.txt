@@ -1,0 +1,9 @@
+http://chhak.or.kr/Board/user/login.html
+http://chhak.or.kr/Board/user/terms.html
+http://chhak.or.kr/Board/user/register.html
+http://chhak.or.kr/Board/list.html
+http://chhak.or.kr/Board/write.html
+http://chhak.or.kr/Board/view.html
+http://chhak.or.kr/Board/modify.html
+
+https://github.com/chhak2021 강사님 깃허브
