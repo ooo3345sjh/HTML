@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>로그인</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font: normal 12px 돋움;
+        }
+
+        ul, ol{list-style: none;}
+        a {text-decoration: none; color: black;}
+
+        #wrap{
+            width: 800px;
+            height: auto;
+            margin: 0 auto;
+        }
+
+        header {
+            width: 100%;
+            height: 35px;
+            background: #f7f7f7;
+            bottom: 1px solid #ebebeb;
+        }
+        header > h1 {
+            float: left;
+            margin-top: 10px;
+            margin-left: 10px;
+            color: #777;
+            font-weight: bold;
+        }
+
+        #user > .terms {
+            width: 600px;
+            height: auto;
+            margin: 35px auto 40px;
+            overflow: hidden;
+        }
+        #user > .terms > table {
+            width: 100%;
+            height: auto;
+            border: 1px solid #e9e9e9;
+            border-top: 2px solid #111;
+            padding: 4px;
+        }
+        #user > .terms > table > caption {
+            padding: 10px 0;
+            text-align: left;
+            font-weight: bold;
+        }
+        #user > .terms > table tr {
+            
+        }
+        #user > .terms > table td {
+        }
+        #user > .terms > table td > textarea {
+            width: 100%;
+            height: 200px;
+            background-color: #f7f7f7;
+            border: 1px solid #e9e9e9;
+            resize: none;
+            box-sizing: border-box;
+            padding: 5px;
+        }
+        #user > .terms > table td > label {
+            float: right;
+        }
+        #user > .terms > table td > label input {
+            vertical-align: text-bottom;
+            margin-right: 3px;
+        }
+
+        #user > .terms > a{
+            display: inline-block;
+            width: 44px;
+            height: 32px;
+            border:1px solid #bebebe;
+            text-align: center;
+            line-height: 32px;
+            float: right;
+            margin-top: 10px;
+            margin-left: 3px;
+        }
+        #user > .terms > .btnCancle{}
+        #user > .terms > .btnNext{
+            background-color: #e9e9e9;
+        }
+
+        footer {
+            width: 100%;
+            height: 35px;
+            background: #f7f7f7;
+            bottom: 1px solid #ebebeb;
+        }
+        footer > p {
+            float: right;
+            margin-top: 11px;
+            margin-right: 10px;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <header>
+            <h1>Board System v1.0</h1>
+        </header>
+        <main id="user">
+            <section class="terms">
+                <table border="0">
+                    <caption>사이트 이용약관</caption>
+                    <tr>
+                        <td><textarea name="terms">약관내용</textarea></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label><input type="checkbox">동의합니다.</label>
+                        </td>
+                    </tr>
+                </table>
+                <table border="0">
+                    <caption>개인정보 취급방침</caption>
+                    <tr>
+                        <td><textarea name="terms">개인정보 내용</textarea></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label><input type="checkbox">동의합니다.</label>
+                        </td>
+                    </tr>
+                </table>
+                <a href="#" class="btnNext">다음</a>
+                <a href="#" class="btnCancle">취소</a>
+            </section>
+        </main>
+        <footer>
+            <p>ⓒCopyright seo.co.kr</p>
+        </footer>
+    </div>
+    
+</body>
+</html>
