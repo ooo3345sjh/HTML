@@ -40,6 +40,13 @@
 ## Ch06. 웹 디자인 실습
     - 1_Web1 : 기업 사이트 메인
     - 2_Web2 : 상품목록
+    
+## Ch06. Board 게시판 실습
+    ### 1_USER
+    - 1_user_login : 로그인 화면 실습 
+    - 1_user_login : 약관동의 화면 실습
+    - 1_user_login : 회원가입 화면 실습
+    - 1_user_login : 로그인 화면 실습
 
 # [Book 실습예제](https://github.com/ooo3345sjh/HTML/tree/main/Book/MyStudy)
     
