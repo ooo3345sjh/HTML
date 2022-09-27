@@ -42,11 +42,17 @@
     - 2_Web2 : 상품목록
     
 ## Ch06. Board 게시판 실습
-    ### 1_USER
-    - 1_user_login : 로그인 화면 실습 
-    - 1_user_login : 약관동의 화면 실습
-    - 1_user_login : 회원가입 화면 실습
-    - 1_user_login : 로그인 화면 실습
+    
+    1_USER
+    - 1_login : 로그인 화면 실습 
+    - 2_terms : 약관동의 화면 실습
+    - 3_register : 회원가입 화면 실습
+    
+    2_Board
+    - 1_list : 글목록 실습
+    - 2_write : 글쓰기 실습
+    - 3_view : 글보기 실습
+    - 4_modify : 글수정 실습
 
 # [Book 실습예제](https://github.com/ooo3345sjh/HTML/tree/main/Book/MyStudy)
     
