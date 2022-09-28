@@ -454,11 +454,7 @@
    margin-bottom: 10px;
 }
 
-#board > .view > .commentList {
-   width: 100%;
-   height: auto;
-   padding: 20px;
-}
+#board > .view > .commentList {}
 #board > .view > .commentList > article {
    overflow: hidden;
 }
