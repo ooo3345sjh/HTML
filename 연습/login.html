@@ -4,218 +4,58 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>로그인</title>
+    <title>부동산 레이아웃 연습</title>
     <style>
         *{
             margin: 0;
             padding: 0;
-            font: normal 12px 돋움;
+            font: normal 12px '고딕';
         }
 
-        ul, ol{list-style: none;}
-        input, textarea {outline: none;}
-        a {text-decoration: none; color: black;}
+        ul, ol {list-style: none;}
+        a {text-decoration: none; color: #111;}
 
-        #wrap{
-            width: 800px;
-            height: auto;
-            margin: 0 auto;
+        #wrapper {}
+        #wrapper {}
+        #wrapper > header {
+
         }
-
-        header {
+        #wrapper > header > div {
             width: 100%;
-            height: 35px;
-            background: #f7f7f7;
-            bottom: 1px solid #ebebeb;
-        }
-        header > h1 {
-            float: left;
-            margin-top: 10px;
-            margin-left: 10px;
-            color: #777;
-            font-weight: bold;
-        }
-        header > p {
-            text-align: right;
-            line-height: 35px;
-            padding-right: 8px;
-        }
-
-        #board {}
-        #board > .view {
-            width: 720px;
-            margin: 60px auto;
-        }
-        #board > .view table{
-            border-collapse: collapse;
-            border-spacing: 0;
-            width: 100%;
-            height: auto;
-            border-top: 2px solid #111;
-        }
-        #board > .view table > caption{
-            text-align: left;
-            margin-bottom: 5px;
-        }
-        #board > .view table tr{border-bottom: 1px solid #e9e9e9;}
-        #board > .view table > tr td{}
-        #board > .view table th{
-            width: 112px;
-            height: 49.5px;
-            box-sizing: border-box;
-            background: #f5f8f9;
-        }
-        #board > .view table tr td {padding: 10px 5px;}
-        #board > .view table td > input{
-            border: none;
-        }
-        #board > .view table td  textarea{
-            width: 100%;
-            height: 307.4px;
-            resize: none;
-            border: none;
-        }
-        
-        
-        #board .view div{
-            margin-top: 8px;
-            text-align: right;
-        }
-        #board .view .btn{display: inline-block;}
-        #board .view .btnCancel{
-            padding: 8px 8px;
-            border: 1px solid #bebebe;
+            height: 78px;
+            border: 1px solid black;
             box-sizing: border-box;
         }
-        #board .view .btnComplete{
-            color: #fff;
-            border: 1px solid #3b3c3f;
-            background-color: #4b545e;
-            padding: 7px 7px;
-        }
+        #wrapper > main {}
+        #wrapper > main section {}
+        #wrapper > main section > div {}
+        #wrapper > main section > aside {}
+        #wrapper > main section > article {}
+        #wrapper > footer {}
 
-        #board > .view > section {
-            border: 1px solid #999999;
-            background: #f9f9f9;
-            padding: 16px;
-            margin-top: 15px;
-        } 
-        #board > .view > section h3 {
-            font-weight: bold;
-            padding-bottom: 5px;
-            border-bottom:1px dotted #999999;
-            margin-bottom: 10px;
-        }
 
-        #board > .view > .commentList {
-            height: 230px;
-            box-sizing: border-box;
-        } 
-        #board > .view > .commentList > article {
-            height: auto;
-        } 
-        #board > .view > .commentList > article textarea {
-            width: 100%;
-            height: 60px;
-            padding: 8px;
-            resize: none;
-            background: none;
-            border: none;
-            box-sizing: border-box;
-        } 
-        #board > .view > .commentList > p {
-            text-align: center;
-            padding: 20px 0;
-        } 
-        
-        #board > .view > .commentWrite textarea{
-            width: 100%;
-            height: 62px;
-            border: 1px solid #e4eaec;
-            resize: none;
-        } 
-       
-        footer {
-            width: 100%;
-            height: 35px;
-            background: #f7f7f7;
-            bottom: 1px solid #ebebeb;
-        }
-        footer > p {
-            float: right;
-            margin-top: 11px;
-            margin-right: 10px;
-            color: #777;
-        }
+
     </style>
 </head>
 <body>
-    <div id="wrap">
+    <div id="wrapper">
         <header>
-            <h1>Board System v1.0</h1>
-            <p>
-                <span>홍길동</span>님 반갑습니다.
-                <a href="#">[로그아웃]</a>
-            </p>
+            <div></div>
         </header>
-        <main id="board">
-            <section class="view">
-
-                    <table border="0">
-                        <caption>글쓰기</caption>
-                        <tr>
-                            <th>제목</th>
-                            <td><input type="text" name="title" value="제목입니다." readonly></td>
-                        </tr>
-                        <tr>
-                            <th>첨부</th>
-                            <td>
-                                <a href="#">2020년 상반기 매출자료.xls</a>&nbsp;<span>7</span>회 다운로드
-                            </td>
-                        </tr>
-                        <tr>
-                            <th>내용</th>
-                            <td><textarea name="content" readonly>내용 샘플입니다.</textarea></td>
-                        </tr>
-                    </table>
-                    <div>
-                        <a href="#" class="btn btnCancel">삭제</a>
-                        <a href="#" class="btn btnCancel">수정</a>
-                        <a href="#" class="btn btnCancel">목록</a>
-                    </div>
-                    <section class="commentList">
-                        <h3>댓글목록</h3>
-                        <article>
-                            <span>길동이</span>
-                            <span>20-05-13</span>
-                            <textarea name="comment" readonly>댓글 샘플입니다.</textarea>
-                        </article>
-        
-                        <div>
-                            <a href="#">삭제</a>
-                            <a href="#">수정</a>
-                        </div>
-        
-                        <p>등록된 댓글이 없습니다.</p>
-                    </section>
-        
-                    <section class="commentWrite">
-                        <h3>댓글쓰기</h3>
-                        <form action="#">
-                            <textarea name="comment"></textarea>
-                            <div>
-                                <a href="#" class="btn btnCancel">취소</a>
-                                <a href="#" class="btn btnComplete">작성완료</a>
-                            </div>
-                        </form>
-                    </section>
+        <main>
+            <section>
+                <div class="banner"></div>
+                <div class="call"></div>
+                <div class="qna"></div>
             </section>
-
+            <section>
+                <aside></aside>
+                <article></article>
+                <article></article>
+                <article></article>
+            </section>
         </main>
-        <footer>
-            <p>ⓒCopyright seo.co.kr</p>
-        </footer>
+        <footer></footer>
     </div>
-    
 </body>
 </html>

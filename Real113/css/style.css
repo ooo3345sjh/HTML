@@ -51,14 +51,14 @@ a {text-decoration: none; color: black;}
 #wrapper > main .call {
     width: 326px;
     height: 133px;
-    border: 1px solid red;
+    border: 1px solid #d7d7d7;
     box-sizing: border-box;
     float: right;
 }
 #wrapper > main .qna {
     width: 326px;
     height: 182px;
-    border: 1px solid red;
+    border: 1px solid #d7d7d7;
     box-sizing: border-box;
     float: right;
     margin-top: 5px;
@@ -70,20 +70,20 @@ a {text-decoration: none; color: black;}
     overflow: hidden;
     position: relative;
     margin-top: 5px;
-    
 }
 #wrapper > main section > aside {
     clear: both;
     width: 195px;
     height: 760px;
-    border: 1px solid green;
+    border: 1px solid #d7d7d7;
     box-sizing: border-box;
     float: left;
+    position: relative;
 }
 #wrapper > main section > article {
     width: 800px;
     height: 250px;
-    border: 1px solid green;
+    border: 1px solid #d7d7d7;
     box-sizing: border-box;
     float: right;  
 }
@@ -95,8 +95,12 @@ a {text-decoration: none; color: black;}
 footer {
     width: 1000px;
     height: 130px;
-    border: 1px solid blue;
+    border: 1px solid #d7d7d7;
+    border-top: 2px solid #777777;
     margin: 0 auto;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
 }
 
 /* main */

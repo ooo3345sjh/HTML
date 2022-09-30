@@ -29,7 +29,7 @@
         }
         #wrapper > header nav a{
             margin-top: 0;
-            color: #d7d7d7;
+            color: #111;;
             font-weight: bold;
             font-size: 17px;
         }
@@ -47,6 +47,7 @@
             margin-left: 9px;
         }
         #wrapper > header > div > div a:nth-of-type(3){
+            margin-top: 5px;
             color: #555555;
         }
         #wrapper > header > div > div a:nth-of-type(3):hover{
@@ -55,35 +56,210 @@
 
         #wrapper .banner {
             background: url("./img/main_banner_bg.jpg") no-repeat;
+            border: 1px solid #d7d7d7;
         }
-        #wrapper .banner > img {
-           
-    
-        }
-        #wrapper .banner > ul{
-            float: right;
-        }
-        #wrapper .banner > ul li{}
-        #wrapper .banner > ul img{
-            display: block;
-        }
+        #wrapper .banner > img {margin: 112px 0 0 163px;}
+        #wrapper .banner > ul{float: right;}
+        #wrapper .banner li a:hover{background-color: #fefefe;}
+        #wrapper .banner > ul img{display: block;}
         #wrapper .banner > ul li a{
             display: block;
             width: 100%;
             height: 100%;
             text-align: center;
             background-color: #f2f2f2;
-            line-height: 39px;
+            line-height: 40px;
             font-size: 14px;
             font-weight: bold;
-            color: #d7d7d7;
-            border: 1px solid #d7d7d7;
+            border-top: 1px solid #d7d7d7;
             box-sizing: border-box;
         }
 
-
-
+        #wrapper > main .call{
+            position: relative;
+            background: #efefef;
+        }
+        #wrapper > main .call > img:not(:last-child) {
+            margin-left: 20px;
+            position: relative; 
+            z-index: 2;
         
+        }
+        #wrapper > main .call > img:nth-child(1) {margin-top: 20px;}
+        #wrapper > main .call > img:nth-child(2) {margin-top: 4px;}
+        #wrapper > main .call > img:nth-child(3) {margin-top: 10px;}
+        #wrapper > main .call > img:nth-child(4) {
+            height: 100%;
+            position: absolute;
+            top: 0;
+            right: 0;
+            z-index: 1;
+        }
+
+        #wrapper > main .qna {
+            padding: 20px;
+        }
+        #wrapper > main .qna > h3{
+            font-size: 14px;
+            font-weight: bold;
+        }
+        #wrapper > main .qna > table{
+            border-collapse: collapse;
+            border-spacing: 0;
+            margin-top: 6px;
+        }
+        #wrapper > main .qna > table tr{}
+        #wrapper > main .qna > table td{
+            color: #6a6a6a;
+        }
+        #wrapper > main .qna > table td:nth-child(1){
+            display: inline-block;
+            width: 225px;
+            overflow:hidden;
+            text-overflow:ellipsis;
+            white-space:nowrap;
+            line-height: 20px;
+        }
+        #wrapper > main .qna > table td:nth-child(1)::before{
+            content: url("./img/ico_latest.gif");
+        }
+        #wrapper > main .qna > table td:nth-child(2){
+            text-align: right;
+            width: 200px;
+        }
+        #wrapper > main .qna > table td > a{
+            color: #6a6a6a;
+        }
+        #wrapper > main .qna > table td > a:hover{
+            text-decoration: underline;
+        }
+
+        #wrapper > main aside > .notice{
+            padding: 10px;
+        }
+        #wrapper > main aside h3{
+            font-size: 14px;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        #wrapper > main aside > .notice > ul > li{
+            overflow: hidden;
+            text-overflow:ellipsis;
+            white-space:nowrap;
+            margin-top: 5px;
+            
+        }
+        #wrapper > main aside > .notice > ul > li::before{ content: url("./img/ico_latest.gif");}
+        #wrapper > main aside > .shortCut{
+            padding: 9px;
+            height: auto;
+            
+        }
+        #wrapper > main aside > .shortCut > a{
+            display: block;
+            width: 100%;
+            height: 36px;
+            text-align: center;
+            box-sizing: border-box;
+            font-size: 0;
+            border: 1px solid #d9d9d9;
+            background-color: #f6f6f6;
+            background-repeat: no-repeat;
+            background-position: center;
+            margin-top: 6px;
+        }
+        #wrapper > main aside > .shortCut > a:nth-of-type(1){
+            background-image: url("./img/aside_quick_court.png");
+        }
+        #wrapper > main aside > .shortCut > a:nth-of-type(2){
+            background-image: url("./img/aside_quick_google.png");
+        }
+        #wrapper > main aside > .shortCut > a:nth-of-type(3){
+            background-image: url("./img/aside_quick_naver_map.png");
+        }
+        #wrapper > main aside > .shortCut > a:nth-of-type(4){
+            background-image: url("./img/aside_quick_naver_subway.png");
+        }
+        
+        #wrapper > main aside > .request{
+            margin-top: 2px;
+            height: 83px;
+            box-sizing: border-box;
+            display: block;
+            border: 1px solid #999;
+            position: relative;
+            overflow: hidden;
+        }
+        #wrapper > main aside > .request img:nth-child(1){
+            position: relative;
+            margin-top: 10px;
+            margin-left: 10px;
+            z-index: 2;
+        }
+        #wrapper > main aside > .request img:nth-child(2){
+            position: absolute;
+            right: 0;
+            top: 0;
+            z-index: 1;
+        }
+
+        #wrapper > main aside > .buy{margin-top: 6px;}
+        #wrapper > main aside > .AD{
+            background-image: url("./img/aside_banner_bg.jpg");
+            background-repeat: no-repeat;
+            width: 100%;
+            height: 167px;
+            position: absolute;
+            bottom: 0;
+        }
+        #wrapper > main .AD > img:nth-child(1) {
+            position: absolute;
+            right: 0;
+        }
+        #wrapper > main .AD > img:not(:first-child) {
+            display: block;
+            padding-top: 30px;
+            padding-left: 10px;
+        }
+        #wrapper > main .AD > a > img {
+            margin-top: 10px;
+            padding-left: 10px;
+        }
+
+        #wrapper > main article {padding: 16px;}
+        #wrapper > main article  > h3 {
+            font-size: 14px;
+            font-weight: bold;
+        }
+        #wrapper > main article  > a img {
+            float: right;
+        }
+        #wrapper > main article > ul {
+            margin-top: 30px;
+            overflow: hidden;
+        }
+        #wrapper > main article ul > li {
+            float: left;
+            width: 20%;
+            text-align: center;
+            
+        }
+        #wrapper > main article ul > li > img {width: 150px;}
+        #wrapper > main article ul > li > a {display: block;}
+        #wrapper > main article ul > li > a:hover {text-decoration: underline;}
+
+        #wrapper > footer > img{}
+        #wrapper > footer > p{
+            margin-top: 5px;
+            font-size: 11.5px;
+            color: #585858;
+            line-height: 1.9em;
+        }
+        #wrapper > footer > p span{
+            display: block;
+            font-weight: bold;
+            padding-top: 6px;
+        }
 
     </style>
 </head>
@@ -111,7 +287,7 @@
         <main>
             <div>
                 <div class="banner">
-                    <img src="./img/main_banner_txt.png" alt="전국 매물 보유량 최다!">
+                    <img src="./img/main_banner_txt.png" alt="전국 매물 보유량 최다! 계약 만족도 최상!">
                     <ul>
                         <img src="./img/main_banner_local.jpg" alt="지역선택">
                         <li><a href="#">서울시</a></li>
@@ -122,17 +298,190 @@
                         <li><a href="#">광주시</a></li>
                     </ul>
                 </div>
-                <div class="right call"></div>
-                <div class="right qna"></div>
+                <div class="right call">
+                    <img src="./img/main_call_tit.png" alt="상담문의 전화">
+                    <img src="./img/main_call_txt.png" alt="궁금하신 사항은 언제든지 전화주세요">
+                    <img src="./img/main_call_num.png" alt="전화번호">
+                    <img src="./img/main_call_phone.png" alt="휴대전화">
+                </div>
+                <div class="right qna">
+                    <h3>질문과 답변</h3>
+                    <table border="0">
+                        <tr>
+                            <td>
+                                <a href="#">테스트입니다.</a>
+                            </td>
+                            <td>
+                                20-05-13
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="#">[문의] 분양상품 중 문의 드립니다. 빠른 답변 부탁드립니다<div class=""></div></a>
+                            </td>
+                            <td>
+                                20-05-13
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="#">[문의] 분양상품 중 문의 드립니다. 빠른 답변 부탁드립니다<div class=""></div></a>
+                            </td>
+                            <td>
+                                20-05-13
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="#">[문의] 분양상품 중 문의 드립니다. 빠른 답변 부탁드립니다<div class=""></div></a>
+                            </td>
+                            <td>
+                                20-05-13
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="#">[문의] 분양상품 중 문의 드립니다. 빠른 답변 부탁드립니다<div class=""></div></a>
+                            </td>
+                            <td>
+                                20-05-13
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="#">[문의] 분양상품 중 문의 드립니다. 빠른 답변 부탁드립니다<div class=""></div></a>
+                            </td>
+                            <td>
+                                20-05-13
+                            </td>
+                        </tr>
+
+                    </table>
+                </div>
             </div>
             <section>
-                <aside></aside>
-                <article></article>
-                <article></article>
-                <article></article>
+                <aside>
+                    <div class="notice">
+                        <h3>공지사항</h3>
+                        <ul>
+                            <li><a href="#"> 전국 매물 보유량 최다! 계약 만족도 최상!.</a></li>
+                            <li><a href="#"> 전국 매물 보유량 최다! 계약 만족도 최상!.</a></li>
+                            <li><a href="#"> 전국 매물 보유량 최다! 계약 만족도 최상!.</a></li>
+                            <li><a href="#"> 전국 매물 보유량 최다! 계약 만족도 최상!.</a></li>
+                            <li><a href="#"> 전국 매물 보유량 최다! 계약 만족도 최상!.</a></li>
+                            <li><a href="#"> 전국 매물 보유량 최다! 계약 만족도 최상!.</a></li>
+                            <li><a href="#"> 전국 매물 보유량 최다! 계약 만족도 최상!.</a></li>
+                            <li><a href="#"> 전국 매물 보유량 최다! 계약 만족도 최상!.</a></li>
+                        </ul>
+                    </div>
+                    <div class="shortCut">
+                        <h3>바로가기</h3>
+                        <a href="#">대법원 인터넷 등기소</a> 
+                        <a href="#">구글 지도</a> 
+                        <a href="#">네이버 지도</a> 
+                        <a href="#">지하철 노선도</a> 
+                    </div>
+                    <a href="#" class="request sell">
+                        <img src="./img/aside_sell_txt.png" alt="">
+                        <img src="./img/aside_sell_house.jpg" alt="">
+                    </a>
+                    <a href="#" class="request buy">
+                        <img src="./img/aside_buy_txt.png" alt="">
+                        <img src="./img/aside_buy_house.jpg" alt="">
+                    </a>
+                    <div class="AD">
+                        <img src="./img/aside_banner_ad.png" alt="">
+                        <img src="./img/aside_banner_txt.png" alt="">
+                        <a href="#"><img src="./img/aside_banner_go.png" alt=""></a>
+                    </div>
+                </aside>
+                <article>
+                    <a href="#"><img src="./img/ico_more.png" alt="더보기"></a> 
+                    <h3>서울시 매물 정보</h3>
+                    <ul>
+                        <li>
+                            <img src="./img/thumbnail_sample1.jpg" alt="샘플이미지">
+                            <a href="#">[아파트] 강변 신축아파트 분양 (방:5/욕실2) / 189㎡ / 매매가 20,800 분양가 20,800</a>
+                        </li>
+                        <li>
+                            <img src="./img/thumbnail_sample2.jpg" alt="샘플이미지">
+                            <a href="#">[아파트] 삼성동 전세 (방:3/욕실2) / 157㎡ / 매매가 21,100</a>
+                        </li>
+                        <li>
+                            <img src="./img/thumbnail_sample3.jpg" alt="샘플이미지">
+                            <a href="#">[빌라] 안국동 매매 (방:8/욕실3) / 309㎡ / 매매가 11,800</a>
+                        </li>
+                        <li>
+                            <img src="./img/thumbnail_sample4.jpg" alt="샘플이미지">
+                            <a href="#">[복층빌라] 한남동 월세 (방:4/욕실2) / 157㎡ / 보증금 3,000 월세80</a>
+                        </li>
+                        <li>
+                            <img src="./img/thumbnail_sample5.jpg" alt="샘플이미지">
+                            <a href="#">[아파트] 역삼동 급매 (방:3/욕실2) / 109㎡ / 매매가 11,800</a>
+                        </li>
+                    </ul>
+                </article>
+                <article>
+                    <a href="#"><img src="./img/ico_more.png" alt="더보기"></a>
+                    <h3>경기도 매물 정보</h3>
+                    <ul>
+                        <li>
+                            <img src="./img/thumbnail_sample1.jpg" alt="샘플이미지">
+                            <a href="#">[아파트] 강변 신축아파트 분양 (방:5/욕실2) / 189㎡ / 매매가 20,800 분양가 20,800</a>
+                        </li>
+                        <li>
+                            <img src="./img/thumbnail_sample2.jpg" alt="샘플이미지">
+                            <a href="#">[아파트] 삼성동 전세 (방:3/욕실2) / 157㎡ / 매매가 21,100</a>
+                        </li>
+                        <li>
+                            <img src="./img/thumbnail_sample3.jpg" alt="샘플이미지">
+                            <a href="#">[빌라] 안국동 매매 (방:8/욕실3) / 309㎡ / 매매가 11,800</a>
+                        </li>
+                        <li>
+                            <img src="./img/thumbnail_sample4.jpg" alt="샘플이미지">
+                            <a href="#">[복층빌라] 한남동 월세 (방:4/욕실2) / 157㎡ / 보증금 3,000 월세80</a>
+                        </li>
+                        <li>
+                            <img src="./img/thumbnail_sample5.jpg" alt="샘플이미지">
+                            <a href="#">[아파트] 역삼동 급매 (방:3/욕실2) / 109㎡ / 매매가 11,800</a>
+                        </li>
+                    </ul>
+                </article>
+                <article>
+                    <a href="#"><img src="./img/ico_more.png" alt="더보기"></a>
+                    <h3>부산시 매물 정보</h3>
+                    <ul>
+                        <li>
+                            <img src="./img/thumbnail_sample1.jpg" alt="샘플이미지">
+                            <a href="#">[아파트] 강변 신축아파트 분양 (방:5/욕실2) / 189㎡ / 매매가 20,800 분양가 20,800</a>
+                        </li>
+                        <li>
+                            <img src="./img/thumbnail_sample2.jpg" alt="샘플이미지">
+                            <a href="#">[아파트] 삼성동 전세 (방:3/욕실2) / 157㎡ / 매매가 21,100</a>
+                        </li>
+                        <li>
+                            <img src="./img/thumbnail_sample3.jpg" alt="샘플이미지">
+                            <a href="#">[빌라] 안국동 매매 (방:8/욕실3) / 309㎡ / 매매가 11,800</a>
+                        </li>
+                        <li>
+                            <img src="./img/thumbnail_sample4.jpg" alt="샘플이미지">
+                            <a href="#">[복층빌라] 한남동 월세 (방:4/욕실2) / 157㎡ / 보증금 3,000 월세80</a>
+                        </li>
+                        <li>
+                            <img src="./img/thumbnail_sample5.jpg" alt="샘플이미지">
+                            <a href="#">[아파트] 역삼동 급매 (방:3/욕실2) / 109㎡ / 매매가 11,800</a>
+                        </li>
+                    </ul>
+                </article>
             </section>
         </main>
-        <footer></footer>
+        <footer>
+            <img src="./img/footer_logo.jpg" alt="부동산113">
+            <p>(주)컴퍼니 / 사업자등록번호 123-45-67890 / 통신판매업신고 제 2013-컴퍼니구-123호 / 등록번호 컴퍼니01234 (2013.04.01) / 발행인 : 홍길동</br>
+            대표 : 홍길동 / 이메일 : email@mail.mail / 전화 : 01) 234-5678 / 부산시 금정구 따듯한동 123-1</br>
+            <span>Copyright(C)컴퍼니 All rights reserved.</span>
+            </p>
+        </footer>
 
     </div>
     
