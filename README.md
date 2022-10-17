@@ -53,6 +53,10 @@
     - 2_write : 글쓰기 실습
     - 3_view : 글보기 실습
     - 4_modify : 글수정 실습
-
+    
+## Real113
+    - 1-layout : 레이아웃 실습
+    - 2-main : 메인 사이트 화면 실습
+    
 # [Book 실습예제](https://github.com/ooo3345sjh/HTML/tree/main/Book/MyStudy)
     
