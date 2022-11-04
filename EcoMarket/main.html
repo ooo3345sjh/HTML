@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>친환경장터::layout</title>
+    <style>
+        /* 초기화 */
+        * {
+            margin: 0;
+            padding: 0;;
+            font: normal 12px 'noto sans korean';
+        }
+
+        ul, ol{list-style: none;}
+        a {text-decoration: none; color: black;}
+        #wrapper{
+            width: 100%;
+            height: auto;
+            border: 1px solid red;
+            box-sizing: border-box;
+        }
+
+        /* 헤더 */
+        header {
+            width: 100%;
+            height: auto;
+            border: 1px solid blue;
+            box-sizing: border-box;
+            
+        }
+
+        header > div {
+            width: 100%;
+            border: 1px solid green;
+            box-sizing: border-box;
+        }
+        header > div:nth-child(1) {height: 44px; background: #f3f3f3;}
+        header > div:nth-child(2) {height: 110px;}        
+        header > div:nth-child(3) {height: 46px; background: #564f47;}
+        header > div > * {
+            width: 1126px;
+            height: 100%;
+            margin: 0 auto;
+            border: 1px solid orange;
+            box-sizing: border-box;
+        }
+        
+        header .top {
+            float: right;
+            margin-top: 6px;
+        }
+        header .top > a {
+            display: inline-block;
+            width: auto;
+            height: auto;
+            margin-right: 10px;
+        }
+        header .top > a:nth-child(1) {margin-right: 30px;}
+        header .top > a > span {
+            display: inline-block;
+            vertical-align: middle;
+            text-align: center;
+            border-radius: 50%;
+            width: 16px;
+            height: 16px;
+            background: #ff6e53;
+            font-size: 11px;
+            color: white;
+        }
+
+        header .top .ico {
+            display: inline-block;
+            vertical-align: middle;
+            width: 17px;
+            height: 17px;
+            background-image: url('./img/sprites.png');
+        }
+        
+        header .top .ico.user {
+            background-position: 0px -504px;
+        }
+        header .top .ico.cart {
+            background-position: 0px -487px;
+        }
+        header .top .ico.wish {
+            background-position: 0px -539px;
+            width: 20px;
+            height: 18px;
+        }
+
+        header .middle {}
+        header .middle > img:nth-child(1) {
+            position: relative;
+            top: 13px;
+            float: left;
+        }
+        header .middle > img:nth-child(2) {
+            position: relative;
+            top: 14px;
+            float: right;
+        }
+
+        header .bottom{ background: #464545;}
+        header .bottom > ul{
+            height: 100%;
+        }
+        header .bottom > ul > li{
+            text-align: center;
+            float: left;
+            width: 16.66%;
+            height: 100%;
+        }
+        header .bottom > ul > li > a:hover{
+            background: #396340;
+            color: #fff;
+            font-size: 16px;
+        }
+        header .bottom > ul > li > a{
+            display: inline-block;
+            width: 100%;
+            height: 100%;
+            line-height: 46px;
+            color: #b0a171;
+            font-size: 15px;
+            font-family: 'arial';
+            font-weight: bold;
+        }
+
+
+        /* 메인 공통 */
+        main {
+            width: 100%;
+            height: auto;
+            border: 1px solid blue;
+            box-sizing: border-box;
+        }
+        main > section {
+            width: 100%;
+            border: 1px solid green;
+            box-sizing: border-box;
+        }
+        main > section:nth-child(1) {height: 480px;}
+        main > section:nth-child(2) {height: auto;}
+        main > section:nth-child(3) {height: 620px; overflow: hidden;}
+        main > section:nth-child(4) {height: 220px;}
+        main > section:nth-child(5) {height: auto;}
+        main > section:nth-child(6) {height: 220px;}
+        main > section:nth-child(7) {height: auto;}
+        
+        main > section > article {
+            width: 1126px;
+            height: 100%;
+            border: 1px solid orange;
+            box-sizing: border-box;
+            margin: 0 auto;
+        }
+
+        /* 메인 - banner(메인) */
+        main > .banner { }
+        main > .banner > article {position: relative;}
+        main > .banner > article > img {
+            position: absolute;
+            top: 80px;
+        }
+        main > .banner > article > img:nth-child(1) {
+
+        }
+        main > .banner > article > img:nth-child(2) {
+            right: 268px;
+        }
+        main > .banner > article > img:nth-child(3) {
+            top: 216px;
+            right: 27px;
+
+        }
+        /* 메인 - new(장터 새상품) */
+        main > .new {}
+        main > section > h3{
+            color: #564f47;
+            text-align: center;
+            font-size: 27px;
+            margin-bottom: 40px;
+        }
+        main > section > h3 > strong{
+            color: #699270;
+            font-size: 27px;
+            font-weight: bold;
+        }
+        main > .new > article{
+            height: 480px;
+        }
+        main > .new > article > div{
+            float: left;
+            width: 345px;
+            border: 1px solid pink;
+            box-sizing: border-box;
+            position: relative;
+        }
+        main > .new > article > div:nth-child(1){
+            width: 434px; 
+            height: 100%; 
+            background: url('./img/main_new_img1.jpg'); 
+        }
+        main > .new > article > div:nth-child(2){height: 50%;}
+        main > .new > article > div:nth-child(3){height: 50%;}
+        main > .new > article > div:nth-child(4){height: 50%;}
+        main > .new > article > div:nth-child(5){height: 50%;}
+
+        main > .new > article > div > span, img{position: absolute;}
+        main > .new > article > div > .price{
+            color: #ef9120;
+            font-size: 30px;
+        }
+        main > .new > article > div:nth-child(1) > .txt{
+            top: 55px;
+            right: 168px;
+            font-size: 27px;
+            color: #564f47;
+        }
+        main > .new > article > div:nth-child(1) > .tit{
+            top: 110px;
+            right: 167px;
+            background: url('./img/bg_transparent.png');
+            font-size: 26px;
+            color: #fff;
+            padding: 4px 6px;
+        }
+        main > .new > article > div:nth-child(1) > .tit > strong{
+            opacity: 1;
+            font-weight: bold;
+            font-size: 32px;
+            color: #c3d069;
+        }
+        main > .new > article > div:nth-child(1) > .price{top: 421px; right: 18px;}
+
+        main > .new > article > div:not(:first-child) > .txt{color: #564f47; font-size: 16px;}
+        main > .new > article > div:not(:first-child) > .tit{font-size: 28px;}
+
+        main > .new > article > div:nth-child(2) > img{top: 16px; left: 20px;}
+        main > .new > article > div:nth-child(2) > .txt{top: 40px; left: 133px;}
+        main > .new > article > div:nth-child(2) > .tit{color: #899b34; top: 90px; left: 130px;}
+        main > .new > article > div:nth-child(2) > .price{top: 176px; right: 20px;}
+        
+        main > .new > article > div:nth-child(3) > img{bottom: 10px; right: 10px;}
+        main > .new > article > div:nth-child(3) > .txt{top: 40px; left: 14px;}
+        main > .new > article > div:nth-child(3) > .tit{color: #358a00; top: 73px; left: 14px;}
+        main > .new > article > div:nth-child(3) > .price{top: 176px; right: 217px;}
+        
+        main > .new > article > div:nth-child(4) > img{bottom: 10px; right: 10px;}
+        main > .new > article > div:nth-child(4) > .txt{top: 40px; left: 14px;}
+        main > .new > article > div:nth-child(4) > .tit{color: #c51a1a; top: 90px; left: 14px;}
+        main > .new > article > div:nth-child(4) > .price{top: 176px; left: 14px;}
+        
+        main > .new > article > div:nth-child(5) > img{bottom: 0px; right: 0px;}
+        main > .new > article > div:nth-child(5) > .txt{top: 40px; left: 14px;}
+        main > .new > article > div:nth-child(5) > .tit{color: #9e7839; top: 90px; left: 14px;}
+        main > .new > article > div:nth-child(5) > .price{top: 176px; left: 14px;}
+
+        /* 메인 - master(장터 명인) */
+        main > .master{
+            background-image: url('./img/main_master_bg.png');
+            background-attachment: fixed;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: bottom;
+        }
+        main > .master > h3{margin-top: 30px;}
+        main > .master > article{}
+
+        main > .master > article > div{
+            float: left;
+            width: 25%;
+            height: 334px;
+            border: 1px solid pink;
+            box-sizing: border-box;
+            padding: 6px;
+            position: relative;
+        }
+        main > .master > article > div > img{position: absolute; left: 2.45px;}
+        main > .master > article > div > p{
+            position: absolute; 
+            bottom: 6px;
+            font-size: 14px;
+            color: #564f47;
+        }
+        main > .master > article > div > p > span{
+            margin-top: 10px;
+            display: block;
+            color: #564f47;
+            font-size: 20px;
+        }
+        
+        /* 메인 - organic_banner(유기농 쌈채소) */
+        main > .organic_banner {
+            background-image: url('./img/main_organic_bg.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: bottom;
+        }
+
+        main > .organic_banner > article {position: relative;}
+        main > .organic_banner > article > img{
+            position: absolute;
+            top: 40px;
+            right: 20px;
+        }
+        /* 메인 - organic(장터 유기농 쌈채소) */
+        main > .organic{}
+        main > .organic > .gallary{}
+        main > .organic > .gallary > div{
+           
+        }
+        main > .organic > .gallary > div > img{
+            position: relative; relative;
+            width: 100%;
+            height: 256px;
+            object-fit: cover;
+        }
+        main > .organic > .gallary > div > span{}
+        main > .organic > h3{margin-top: 30px;}
+
+        /* 메인 - grain_banner(건강잡곡) */
+        main > .organic{}
+        main > .organic{}
+
+        /* 메인 - grain(장터 쌀잡곡) */
+
+        /* 메인 - gallary 공통 */
+        main .gallary{
+            overflow: hidden;
+        }
+        main .gallary > div {
+            position: relative;
+            float: left;
+            width: 25%;
+            height: 400px;
+            padding: 4px;
+            border: 1px solid pink;
+            box-sizing: border-box;
+            cursor: pointer;
+        }
+
+        /* 푸터 */
+        footer {
+            width: 100%;
+            height: auto;
+            border: 1px solid blue;
+            box-sizing: border-box;
+        }
+        footer > div{
+            width: 1126px;
+            height: 210px;
+            border: 1px solid green;
+            box-sizing: border-box;
+            margin: 0 auto;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <div>
+                <div>
+                    <p class="top">
+                        <a href="#">
+                            <i class="ico user"></i>
+                        </a>
+                        <a href="#">
+                            <i class="ico cart"></i>
+                            <span>0</span>
+                        </a>
+                        <a href="#">
+                            <i class="ico wish"></i>
+                            <span>0</span>
+                        </a>
+                    </p>
+                </div>
+            </div>
+            <div>
+                <section class="middle">
+                    <img src="./img/header_logo.png" alt="친환경장터 자연을 담은 우리집 먹거리">
+                    <img src="./img/header_banner.png" alt="장터반찬 4종 세트 할인">
+                </section>
+            </div>
+            <div>
+                <nav class="bottom">
+                    <ul>
+                        <li><a href="#">친환경장터 소개</a> </li>
+                        <li><a href="#">과일</a></li>
+                        <li><a href="#">채소</a></li>
+                        <li><a href="#">쌀·잡곡</a></li>
+                        <li><a href="#">반찬</a></li>
+                        <li><a href="#">고객센터</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <section class="banner">
+                <article>
+                    <img src="./img/main_banner_img.jpg" alt="브로콜리, 피망, 오이, 양배추">
+                    <img src="./img/main_banner_tit.jpg" alt="친환경 우리집 식탁">
+                    <img src="./img/main_banner_txt.png" alt="깐깐하게 고른 유기농 쌈채소 우리가족이 안심하고 먹을 수 있는 먹거리를 만드는 친환경 장터 오늘 수확한 상품만 배송. 제일 잘자란 상품만 배송.">
+                </article>
+            </section>
+            <section class="new">
+                <h3>장터 <strong>새상품</strong></h3>
+                <article>
+                    <div>
+                        <img src="./img/main_new_badge.png" alt="new">
+                        <span class="txt">우리농가에서 자란</span>
+                        <span class="tit">껍질째 먹는
+                            <strong>포도</strong>
+                        </span>
+                        <span class="price">8,900원</span>
+                    </div>
+                    <div>
+                        <img src="./img/main_new_img2.jpg" alt="올리브 오일">
+                        <span class="txt">맛과 향이 다른<br/>정석가득 각 짜낸</span>
+                        <span class="tit">올리브 오일</span>
+                        <span class="price">18,900원</span>
+                    </div>
+                    <div>
+                        <img src="./img/main_new_img3.png" alt="청경채">
+                        <span class="txt">시력보호·혈액순환·피부미용</span>
+                        <span class="tit">청경채</span>
+                        <span class="price">10,000원</span>
+                    </div>
+                    <div>
+                        <img src="./img/main_new_img4.jpg" alt="천연벌꿀">
+                        <span class="txt">강원도의 맑은<br/>자연환경에서 생산한</span>
+                        <span class="tit">천연벌꿀</span>
+                        <span class="price">21,000원</span>
+                    </div>
+                    <div>
+                        <img src="./img/main_new_img5.jpg" alt="느타리버섯">
+                        <span class="txt">무농약 인증<br/>버섯의 진한 향과 쫄깃한 식감</span>
+                        <span class="tit">느타리버섯</span>
+                        <span class="price">9,000원</span>
+                    </div>
+                </article>
+            </section>
+            <section class="master">
+                <h3>전국최고 장터명인<strong>장터명인</strong></h3>
+                <article>
+                    <div>
+                        <img src="./img/main_master_pic1.jpg" alt="master1">
+                        <p>
+                            강원도 놀작물 명인<br/>내용을 입력 내용을 입력하세요.
+                            <span class="name">김 O O 님</span>
+                        </p>
+                    </div>
+                    <div>
+                        <img src="./img/main_master_pic2.jpg" alt="master2">
+                        <p>
+                            강원도 놀작물 명인<br/>내용을 입력 내용을 입력하세요.
+                            <span class="name">김 O O 님</span>
+                        </p>
+                    </div>
+                    <div>
+                        <img src="./img/main_master_pic3.jpg" alt="master3">
+                        <p>
+                            강원도 놀작물 명인<br/>내용을 입력 내용을 입력하세요.
+                            <span class="name">김 O O 님</span>
+                        </p>
+                    </div>
+                    <div>
+                        <img src="./img/main_master_pic4.jpg" alt="master4">
+                        <p>
+                            강원도 놀작물 명인<br/>내용을 입력 내용을 입력하세요.
+                            <span class="name">김 O O 님</span>
+                        </p>
+                    </div>
+                </article>
+            </section>
+            <section class="organic_banner">
+                <article>
+                    <img src="./img/main_organic_bg_txt.png" alt="자연 그대로의 신선함 싱싱하고 다양한 유기농 쌈채소 ">
+                </article>
+            </section>
+            <section class="organic">
+                <h3>장터 <strong>유기농 쌈채소</strong></h3>
+                <article class="gallary">
+                    <div>
+                        <img src="./img/main_organic_thum1.jpg" alt="쌈채소1">
+                        <span class="tit">건강한 자연의 맛과 영양 쌈</span>
+                        <span class="txt">직접 농사짓는 농산물 세계3대 장수 식품</span>
+                        <span class="price"></span>
+                    </div>
+                    <div>
+                        <img src="./img/main_organic_thum2.jpg" alt="쌈채소2">
+                        <span class="tit">건강한 자연의 맛과 영양 쌈</span>
+                        <span class="txt">직접 농사짓는 농산물 세계3대 장수 식품</span>
+                        <span class="price"></span>
+                    </div>
+                    <div>
+                        <img src="./img/main_organic_thum3.jpg" alt="쌈채소3">
+                        <span class="tit">건강한 자연의 맛과 영양 쌈</span>
+                        <span class="txt">직접 농사짓는 농산물 세계3대 장수 식품</span>
+                        <span class="price"></span>
+                    </div>
+                    <div>
+                        <img src="./img/main_organic_thum4.jpg" alt="쌈채소4">
+                        <span class="tit">건강한 자연의 맛과 영양 쌈</span>
+                        <span class="txt">직접 농사짓는 농산물 세계3대 장수 식품</span>
+                        <span class="price"></span>
+                    </div>
+                    <div>
+                        <img src="./img/main_organic_thum5.jpg" alt="쌈채소5">
+                        <span class="tit">건강한 자연의 맛과 영양 쌈</span>
+                        <span class="txt">직접 농사짓는 농산물 세계3대 장수 식품</span>
+                        <span class="price"></span>
+                    </div>
+                    <div>
+                        <img src="./img/main_organic_thum6.jpg" alt="쌈채소6">
+                        <span class="tit">건강한 자연의 맛과 영양 쌈</span>
+                        <span class="txt">직접 농사짓는 농산물 세계3대 장수 식품</span>
+                        <span class="price"></span>
+                    </div>
+                    <div>
+                        <img src="./img/main_organic_thum7.jpg" alt="쌈채소7">
+                        <span class="tit">건강한 자연의 맛과 영양 쌈</span>
+                        <span class="txt">직접 농사짓는 농산물 세계3대 장수 식품</span>
+                        <span class="price"></span>
+                    </div>
+                    <div>
+                        <img src="./img/main_organic_thum8.jpg" alt="쌈채소8">
+                        <span class="tit">건강한 자연의 맛과 영양 쌈</span>
+                        <span class="txt">직접 농사짓는 농산물 세계3대 장수 식품</span>
+                        <span class="price"></span>
+                    </div>
+                </article>
+            </section>
+            <section class="grain_banner">
+                <article></article>
+            </section>
+            <section class="grain">
+                <article class="gallary">
+                    <div>1</div>
+                    <div>2</div>
+                    <div>3</div>
+                    <div>4</div>
+                    <div>5</div>
+                    <div>6</div>
+                    <div>7</div>
+                    <div>8</div>
+                </article>
+            </section>
+        </main>
+        <footer>
+            <div></div>
+        </footer>
+    </div>
+    
+</body>
+</html>
