@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>친환경장터::layout</title>
+    <style>
+        /* 초기화 */
+        * {
+            padding: 0; 
+            margin: 0; 
+            font: normal 12px 'noto sans korean';
+        }
+        ul,ol { list-style: none;}
+        a {text-decoration: none; color: black;}
+        #wrapper {
+            width: 100%;
+            height: auto;
+            border: 1px solid red;
+            box-sizing: border-box;
+        }
+
+        /* 헤더 공통 */
+        header {
+            width: 100%;
+            height: auto;
+        }
+        header > section {}
+        header > section > div { 
+            width: 100%; 
+            height: auto; 
+        }
+        header > section > div > div {
+            width: 1125px;
+            height: 100%;
+            margin: 0 auto;
+        }
+        header > section > div:nth-child(1) {height: 45px; background: #f3f3f3;}
+        header > section > div:nth-child(2) {height: 112px;}
+        header > section > div:nth-child(3) {height: 48px; background: #564f47;}
+
+        header > section > div > div > .top {
+            float: right;
+            margin-top: 10px;
+        }
+
+        header > section > div > div > .top > a {
+            display: inline-block;
+            vertical-align: middle;
+            width: auto; 
+            height: auto;
+        }
+        header .top > .user {}
+        header .top > .cart {margin-right: 10px;}
+        header .top > .wish {margin-right: 20px}
+        header .top > a > span {
+            display: inline-block; 
+            vertical-align: middle;
+            width: 17px; 
+            height: 17px;
+            background-image: url('./img/sprites.png');
+        }
+        header .top > .user > span {background-position: 0 -504px; margin-right: 20px;}
+        header .top > .cart > span {background-position: 0 -487px; margin-right: 3px}
+        header .top > .wish > span {
+            width: 20px;
+            height: 18px;
+            background-position: 0 -539px;
+            margin-right: 3px;
+        }
+        header .top > a > i {
+            display: inline-block;
+            vertical-align: middle;
+            text-align: center;
+            width: 15px;
+            height: auto;
+            border-radius: 50%;
+            color: #fff;
+            background-color: #ff6e53;
+        }
+
+        header > section > .middle {}
+        header > section > .middle > a {}
+        header .middle > a:nth-child(1) > img {
+            margin-top: 10px;
+            float: left;
+        }
+        header .middle > a:nth-child(2) > img {
+            margin-top: 23px;
+            float: right;
+        }
+
+        header > section > div { }
+        header .bottom > ul {width: auto; height: 100%;}
+        header .bottom > ul > li {
+            float: left; 
+            width: 16.666%;
+            height: 100%;
+            text-align: center;
+            background: #464545;
+            
+        }
+        header .bottom > ul > li > a:hover {
+            color: #fff;
+            background: #396340;
+            font-size: 16px;
+        }
+        header .bottom > ul > li > a {
+            display: inline-block;
+            width: 100%;
+            height: 100%;
+            line-height: 48px;
+            color: #b0a171;
+            font-size: 15px;
+            font-weight: bold;
+        }
+        
+        /* 메인 공통 */
+        main {
+            width: 100%;
+            height: auto;
+            border: 1px solid blue;
+            box-sizing: border-box;
+        }
+        main > section{overflow: hidden;}
+        main > section:nth-child(1){height: 480px;}
+        main > section:nth-child(2){height: auto;}
+        main > section:nth-child(3){height: 620px; overflow: hidden;}
+        main > section:nth-child(4){height: 222px;}
+        main > section:nth-child(5){height: 800px;}
+        main > section:nth-child(6){height: 222px;}
+        main > section:nth-child(7){height: 800px;}
+        main > section{
+            width: 100%;
+            height: auto;
+            border: 1px solid blue;
+            box-sizing: border-box;
+        }
+        main > section > article{
+            width: 1125px;
+            height: 100%;
+            margin: 0 auto;
+            border: 1px solid orange;
+            box-sizing: border-box;
+            
+        }
+        main > section > h3 {
+            text-align: center;
+            font-size: 27px;
+            color: #564f47;
+            margin: 70px 0 30px 0;
+        }
+        main > section > h3 > strong {
+            font-size: 27px;
+            color: #699270;
+            font-weight: bold;
+        }
+          /* 메인 배너 */
+        main > .banner {}
+        main > .banner > article{position: relative;}
+        main > .banner > article > img{position: absolute;}
+        main > .banner > article > img:nth-child(1){top: 50px; left: 0px;}
+        main > .banner > article > img:nth-child(2){top: 82px; right: 257px;}
+        main > .banner > article > img:nth-child(3){top: 210px; right: 15px;}
+
+        /* 메인 새상품 */
+        main > .new{}
+        main > .new > article{height: 480px;}
+        main > .new > article > div {
+            float: left;
+            width: 345px; 
+            border: 1px solid pink;
+            box-sizing: border-box;
+            position: relative;
+        }
+        main > .new > article > div > .price{
+            color: #ef9120;
+            font-size: 30px;
+        }
+        
+        main > .new > article > div:nth-child(1){
+            width: 431px; 
+            height: 100%;
+            background: url('./img/main_new_img1.jpg');
+            position: relative;
+        }
+        main > .new > article > div:nth-child(1) > img{}
+        main > .new > article > div:nth-child(1) > span{position: absolute;}
+        main > .new > article > div:nth-child(1) > .txt{
+            left: 40px;
+            top: 60px;
+            font-size: 27px;
+            color: #564f47;
+        }
+        main > .new > article > div:nth-child(1) > .tit{
+            left: 40px;
+            top: 116px;
+            font-size: 26px;
+            color: #fff;
+            padding: 4px 6px;
+            background: url('./img/bg_transparent.png');
+        }
+        main > .new > article > div:nth-child(1) > .tit > strong{
+            font-size: 32px;
+            color: #c3d069;
+            font-weight: bold;
+        }
+        main > .new > article > div:nth-child(1) > .price{
+            right: 20px;
+            bottom: 20px;
+        }
+        main > .new > article > div:not(:first-child){height: 50%;}
+        main > .new > article > div:not(:first-child) > .txt{
+            font-size: 16px;
+            color: #564f47;
+        }
+        main > .new > article > div:not(:first-child) > img{ position: absolute;}
+        main > .new > article > div:not(:first-child) > .txt{ position: absolute;}
+        main > .new > article > div:not(:first-child) > .tit{ position: absolute;}
+        main > .new > article > div:not(:first-child) > .price{ position: absolute;}
+        main > .new > article > div:nth-child(2) > img{left: 20px; top: 20px;}
+        main > .new > article > div:nth-child(2) > .txt{left: 130px; top: 40px;}
+        main > .new > article > div:nth-child(2) > .tit{
+            left: 130px; 
+            top: 90px;
+            font-size: 28px;
+            color: #899b34;
+        }
+        main > .new > article > div:nth-child(2) > .price{right: 20px; bottom: 20px;}
+
+        main > .new > article > div:nth-child(3) > img{right: 5px; bottom: 10px;}
+        main > .new > article > div:nth-child(3) > .txt{left: 20px; top: 50px;}
+        main > .new > article > div:nth-child(3) > .tit{
+            left: 20px; 
+            top: 90px;
+            font-size: 28px;
+            color: #358a00;
+        }
+        main > .new > article > div:nth-child(3) > .price{left: 5px; bottom: 20px;}
+        
+        main > .new > article > div:nth-child(4) > img{right: 0px; bottom: 0px;}
+        main > .new > article > div:nth-child(4) > .txt{left: 20px; top: 60px;}
+        main > .new > article > div:nth-child(4) > .tit{
+            left: 20px; 
+            top: 110px;
+            font-size: 28px;
+            color: #c51a1a;
+        }
+        main > .new > article > div:nth-child(4) > .price{left: 5px; bottom: 20px;}
+        
+        main > .new > article > div:nth-child(5) > img{right: 0px; bottom: 0px;}
+        main > .new > article > div:nth-child(5) > .txt{left: 20px; top: 30px;}
+        main > .new > article > div:nth-child(5) > .tit{
+            left: 20px; 
+            top: 80px;
+            font-size: 28px;
+            color: #9e7839;
+        }
+        main > .new > article > div:nth-child(5) > .price{left: 5px; bottom: 20px;}
+
+        
+        /* 메인 장터 명인 */
+        main > .master {}
+        main > .master > article {
+            height: 331px;
+        }
+        main > .master > article > div {
+            float: left;
+            width: 25%; 
+            height: 100%;
+            border: 1px solid pink; 
+            box-sizing: border-box;
+        }
+        
+        
+        /* 메인 유기농 배너 */
+        main > .organic_banner {}
+        main > .organic_banner > article {}
+        /* 메인 장터 유기농 쌈채소 */
+        main > .organic {}
+        main > .organic > article {}
+        main > .organic > article > div {
+            float: left;
+            width: 24.8%;
+            height: 50%;
+            border: 1px solid pink;
+        }
+        /* 메인 잡곡 배너 */
+        main > .grain_banner {}
+        main > .grain_banner > article {}
+        /* 메인 장터 쌀잡곡   */
+        main > .grain {}
+        main > .grain > article {}
+        main > .grain > article > div {
+            float: left;
+            width: 24.8%;
+            height: 50%;
+            border: 1px solid pink;
+        }
+        /* 푸터 */
+        footer {
+            width: 100%;
+            height: 210px;
+            border: 1px solid blue;
+            box-sizing: border-box;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+
+        <header>
+            <section>
+                <div>
+                    <div>
+                        <p class="top">
+                            <a class="user" href="#">
+                                <span></span>
+                            </a>
+                            <a class="cart" href="#">
+                                <span></span>
+                                <i>0</i>
+                            </a>
+                            <a class="wish" href="#">
+                                <span></span>
+                                <i>0</i>
+                            </a>
+                        </p>
+                    </div>
+                </div>
+                <div>
+                    <div class="middle">
+                        <a href="#"><img src="./img/header_logo.png" alt="친환경장터, 자연을 담은 우리집 먹거리"></a>
+                        <a href="#"><img src="./img/header_banner.png" alt="장터반찬 4종 세트 할인 7,500원"></a>
+                    </div>
+                </div>
+                <div>
+                    <div class="bottom">
+                        <ul>
+                            <li><a href="#">친환경장터 소개</a></li>
+                            <li><a href="#">과일</a></li>
+                            <li><a href="#">채소</a></li>
+                            <li><a href="#">쌀·잡곡</a></li>
+                            <li><a href="#">반찬</a></li>
+                            <li><a href="#">고객센터</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </header>
+        <main>
+            <section class="banner">
+                <article>
+                    <img src="./img/main_banner_img.jpg" alt="각종 채소">
+                    <img src="./img/main_banner_tit.jpg" alt="친환경 우리집 식탁">
+                    <img src="./img/main_banner_txt.png" alt="깐깐하게 고른 유기농 쌈채소">
+                </article>
+            </section>
+            <section class="new">
+                <h3>장터 <strong>새상품</strong></h3>
+                <article>
+                    <div>
+                        <img src="./img/main_new_badge.png" alt="new">
+                        <span class="txt">우리농가에서 자란</span>
+                        <span class="tit">껍질째 먹는 <strong>포도</strong></span>
+                        <span class="price">8,900원</span>
+                    </div>
+                    <div>
+                        <img src="./img/main_new_img2.jpg" alt="올리브 오일">
+                        <span class="txt">맛과 향이 다른<br/> 정성가득 갓 짜낸</span>
+                        <span class="tit">올리브 오일</span>
+                        <span class="price">18,900원</span>
+                    </div>
+                    <div>
+                        <img src="./img/main_new_img3.png" alt="청경채">
+                        <span class="txt">시력보호·혈액순환·피부미용</span>
+                        <span class="tit">청경채</span>
+                        <span class="price">10,000원</span>
+                    </div>
+                    <div>
+                        <img src="./img/main_new_img4.jpg" alt="천연벌꿀">
+                        <span class="txt">강원도의 맑은<br/>자연환경에서 생산한</span>
+                        <span class="tit">천연벌꿀</span>
+                        <span class="price">21,000원</span>
+                    </div>
+                    <div>
+                        <img src="./img/main_new_img5.jpg" alt="느타리버섯">
+                        <span class="txt">맛과 향이 다른<br/>버섯의 진한 향과 쫄깃한 식감</span>
+                        <span class="tit">느타리 버섯</span>
+                        <span class="price">9,000원</span>
+                    </div>
+                </article>
+            </section>
+            <section class="master">
+                <article>
+                    <div>1</div>
+                    <div>2</div>
+                    <div>3</div>
+                    <div>4</div>
+                </article>
+            </section>
+            <section class="organic_banner">
+                <article></article>
+            </section>
+            <section class="organic">
+                <article>
+                    <div>1</div>
+                    <div>2</div>
+                    <div>3</div>
+                    <div>4</div>
+                    <div>5</div>
+                    <div>6</div>
+                    <div>7</div>
+                    <div>8</div>
+                </article>
+            </section>
+            <section class="grain_banner">
+                <article></article>
+            </section>
+            <section class="grain">
+                <article>
+                    <div>1</div>
+                    <div>2</div>
+                    <div>3</div>
+                    <div>4</div>
+                    <div>5</div>
+                    <div>6</div>
+                    <div>7</div>
+                    <div>8</div>
+                </article>
+            </section>
+        </main>
+        <footer>
+            <div></div>
+        </footer>
+    </div>
+</body>
+</html>
